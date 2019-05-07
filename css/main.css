@@ -1,0 +1,29 @@
+
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 10vh 50vh;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input {
+    padding: 25px;
+    font-size: 20px;
+}
+
+.display {
+    grid-column: span 4;
+    text-align: right;
+    border: 2px solid black;
+    font-size: 30px;
+}
+
+.equal {
+    grid-column: span 2;
+}
+
+.clear {
+    grid-column: span 2;
+}

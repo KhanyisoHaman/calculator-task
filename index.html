@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Calculator</title>
+    <!-- Link My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <main>
+
+        <h1>Calculator</h1>
+
+        <p>An electronic calculator is typically a portable electronic device used to perform calculations, ranging from basic arithmetic to complex mathematics.</p>
+
+        <p>The first solid-state electronic calculator was created in the early 1960s. Pocket-sized devices became available in the 1970s, especially after the Intel 4004, the first microprocessor, was developed by Intel for the Japanese calculator company Busicom. They later became used commonly within the petroleum industry (oil and gas).</p>
+
+        <p>Modern electronic calculators vary from cheap, give-away, credit-card-sized models to sturdy desktop models with built-in printers. They became popular in the mid-1970s as the incorporation of integrated circuits reduced their size and cost. By the end of that decade, prices had dropped to the point where a basic calculator was affordable to most and they became common in schools.</p>
+
+        <p>Computer operating systems as far back as early Unix have included interactive calculator programs such as dc and hoc, and calculator functions are included in almost all personal digital assistant (PDA) type devices, the exceptions being a few dedicated address book and dictionary devices.</p>
+
+        <p>In addition to general purpose calculators, there are those designed for specific markets. For example, there are scientific calculators which include trigonometric and statistical calculations. Some calculators even have the ability to do computer algebra. Graphing calculators can be used to graph functions defined on the real line, or higher-dimensional Euclidean space. As of 2016, basic calculators cost little, but scientific and graphing models tend to cost more.</p>
+
+    </main>
+
+    <!-- Caculator Body -->
+    <form name="Calculator">
+        <!-- Display Line -->
+        <input name="display" class="display" placeholder="0" >
+        <!-- Keypads -->
+
+        <!-- First Row -->
+        <input type="button" value="7" onclick="seven()" >
+        <input type="button" value="8" onclick="eight()" >
+        <input type="button" value="9" onclick="nine()">
+        <input type="button" value="+" onclick="btnAdd()" >
+
+        <!-- Second Row -->
+        <input type="button" value="4" onclick="four()" >
+        <input type="button" value="5" onclick="five()" >
+        <input type="button" value="6" onclick="six()">
+        <input type="button" value="-" onclick="btnSub()" >
+
+        <!-- Third Row -->
+        <input type="button" value="1" onclick="one()" >
+        <input type="button" value="2" onclick="two()" >
+        <input type="button" value="3" onclick="three()">
+        <input type="button" value="x" onclick="btnMult()" >
+
+        <!-- Fourth Row -->
+        <input type="button" value="%" onclick="btnPer()" >
+        <input type="button" value="0" onclick="zero()" >
+        <input type="button" value="." onclick="btnDot()">
+        <input type="button" value="/" onclick="btnDiv()" >
+
+        <!-- Fifth Row -->
+        <input class="clear" type="button" value="AC" onclick="btnClear()">
+        <input class="equal" type="button" value="=" onclick="btnEqual()">
+    </form>
+
+    <button id="hide" >Close</button>
+    <button id="show" >Open</button>
+
+    <!-- Link My Jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <!-- Link My JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
